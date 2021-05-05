@@ -1,0 +1,59 @@
+div.head h1::first-line {
+  color: rgb(82, 6, 6);
+  text-align: center;
+}
+.head h1::first-letter {
+  color: blue;
+  font-size: larger;
+}
+div.head ul li::marker {
+  color: rgb(235, 14, 14);
+}
+/*for head and points*/
+
+.dd {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.options a {
+  color: black;
+  padding: 12px 2px;
+  text-decoration: none;
+  display: block;
+  margin-left: 2cm;
+}
+
+.options a:hover {
+  background-color: #f1f1f1;
+  border-color: none;
+}
+
+.dropdown:hover .options {
+  display: block;
+  border-color: none;
+}
+
+.dropdown:hover .dd {
+  background-color: #3e8e41;
+  border-color: none;
+}
